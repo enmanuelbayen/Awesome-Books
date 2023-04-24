@@ -43,7 +43,21 @@ add.addEventListener('click', function () {
 
 
 
-remove.addEventListener('click', () => {
-    bookList.filter(bookList[i], -1);
-    bookBody.removeChild(shelf);
-})
+// remove.addEventListener('click', () => {
+//     bookList.filter(bookList[i], -1);
+//     bookBody.removeChild(shelf);
+// })
+
+
+// Attach a click event listener to the bookBody container instead of the remove buttons
+bookBody.addEventListener('click', (event) => {
+  // Check if the clicked element is a remove button
+  if (event.target.classList.contains('removeBttn')) {
+    // Get the index of the book to remove based on the button's parent element
+    const indexToRemove = Array.from(bookBody.children).indexOf(event.target.parentElement);
+    // Remove the book from the bookList array
+    bookList.splice(indexToRemove, 1);
+    // Remove the book element from the DOM
+    event.target.parentElement.remove();
+  }
+});
