@@ -39,9 +39,9 @@ Will have future changes in the next days!
 
 
 
-# 📖 Web page for Gamescom event! <a name="about-project"></a>
+# 📖 Awesome books!  <a name="about-project"></a>
 
-> Testing all the information learned in the course in the areas of HTML, CSS and JS to achieve the results shown..
+> Here you can save the names of your books and their authors in a list that you can then share with your acquaintances!
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -73,7 +73,7 @@ Will have future changes in the next days!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<p> Checkout my capstone <a href="#" target="_blank" rel="noopener noreferrer"> here!</a> </p>  
+<p> You can see the page <a href="https://enmanuelbayen.github.io/Awesome-Books/" target="_blank" rel="noopener noreferrer"> here!</a> </p>  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
