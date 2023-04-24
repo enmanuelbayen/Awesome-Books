@@ -1,16 +1,20 @@
-let bookList = [
-    {   
-        'title': 'Lorem Ipsum',
-        'author': 'Testeroo testyy'   
-    }
-];
 
 
+if(localStorage.getItem('formData')){
+    const checkData = JSON.parse(localStorage.getItem('formData'))
+}
+
+
+let bookList = [];
+
+const form = document.querySelector('.bookForm');
 const add = document.querySelector('.addBttn');
 const remove = document.querySelectorAll('.removeBttn');
 const bookBody = document.querySelector('.bookList-container'); 
 let title = document.querySelector('.book-title');
 let author = document.querySelector('.book-author');
+
+// Function to add to the html and object array
 
 const printBooks = function() {
     bookBody.innerHTML=``;
@@ -41,13 +45,7 @@ add.addEventListener('click', function () {
     return bookList;
 });
 
-
-
-// remove.addEventListener('click', () => {
-//     bookList.filter(bookList[i], -1);
-//     bookBody.removeChild(shelf);
-// })
-
+// Remove function
 
 // Attach a click event listener to the bookBody container instead of the remove buttons
 bookBody.addEventListener('click', (event) => {
@@ -61,3 +59,35 @@ bookBody.addEventListener('click', (event) => {
     event.target.parentElement.remove();
   }
 });
+
+// localstorage
+
+function saveData() {
+    // this is the object required
+    const data = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+  
+    localStorage.setItem('formData', JSON.stringify(data));
+  }
+  
+  function loadData() {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+  
+    if (formData) {
+      nameInput.value = formData.name;
+      emailInput.value = formData.email;
+      messageInput.value = formData.message;
+    }
+  }
+  
+  emailInput.addEventListener('input', saveData);
+  nameInput.addEventListener('input', saveData);
+  messageInput.addEventListener('input', saveData);
+  loadData();
+  
+  form.addEventListener('submit', () => {
+    localStorage.removeItem('formData');
+  });
