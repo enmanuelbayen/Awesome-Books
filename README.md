@@ -1,10 +1,6 @@
 # Awesome-Books
 
-# Capstone-Web-page
-
-# Gaming event 2023 web page showcase
-
-Create with the aim of mentioning one of the thematics of events that I like the most that is that of the video games and using all my knowledge in the first module of the program microverse to give it form and functionality. 
+First steps to creating a page week that stores all books that usury indicates and so have a personal library!
 
 Will have future changes in the next days! 
 
@@ -46,7 +42,7 @@ Will have future changes in the next days!
 # 📖 Web page for Gamescom event! <a name="about-project"></a>
 
 > Testing all the information learned in the course in the areas of HTML, CSS and JS to achieve the results shown..
-> You can watch this video of me commenting on my first advances in creating this web page and how I felt in the process and the Features I added. [Loom video](https://www.loom.com/share/7fb4ce81b2bb4336ab525c2228f151f4)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -77,7 +73,7 @@ Will have future changes in the next days!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<p> Checkout my capstone <a href="https://enmanuelbayen.github.io/Capstone-Web-page/" target="_blank" rel="noopener noreferrer"> here!</a> </p>  
+<p> Checkout my capstone <a href="#" target="_blank" rel="noopener noreferrer"> here!</a> </p>  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +141,10 @@ I use Githud pages for the deployment of this web page.
 - Twitter: [@EJbayen](https://twitter.com/EJbayen)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/enmanuel-bayen-torres-480906128/)
 
+👤 **Tomas Esquivel**
+
+- GitHub: [@tomasesquivelgc](https://github.com/tomasesquivelgc)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -183,10 +183,6 @@ If you like this project just keep an eye on the changes that I will bring over 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank to my family and God for the opportunities to always improve despite adversity, my girlfriend and friends for being there for me, and Microverse for providing a platform to achieve this goal.
-
-Use <a href="https://www.behance.net/adagio07">Cindy Shin in Behance</a> work as reference material.  
-
-There were only a few changes in content and styles from the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
