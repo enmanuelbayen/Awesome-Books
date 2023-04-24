@@ -1,9 +1,8 @@
-let bookList = [
-    {   
-        'title': 'Lorem Ipsum',
-        'author': 'Testeroo testyy'   
-    }
-];
+let bookList =[];
+
+if(localStorage.getItem('data')){
+    bookList = JSON.parse(localStorage.getItem('data'));
+};
 
 
 const add = document.querySelector('.addBttn');
@@ -37,8 +36,8 @@ add.addEventListener('click', function () {
     };
     
     bookList.push(newObj);
+    localStorage.setItem('data', JSON.stringify(bookList));
     printBooks();
-    return bookList;
 });
 
 
@@ -49,15 +48,18 @@ add.addEventListener('click', function () {
 // })
 
 
-// Attach a click event listener to the bookBody container instead of the remove buttons
+
 bookBody.addEventListener('click', (event) => {
-  // Check if the clicked element is a remove button
+ 
   if (event.target.classList.contains('removeBttn')) {
-    // Get the index of the book to remove based on the button's parent element
+ 
     const indexToRemove = Array.from(bookBody.children).indexOf(event.target.parentElement);
-    // Remove the book from the bookList array
+
     bookList.splice(indexToRemove, 1);
-    // Remove the book element from the DOM
+    localStorage.setItem('data',JSON.stringify(bookList));
+
     event.target.parentElement.remove();
   }
 });
+
+printBooks();
