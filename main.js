@@ -45,7 +45,27 @@ addBook.addEventListener('click', () => {
 //     bookList.filter(bookList[1], -1);
 // }
 
-remove.addEventListener('click', () => {
-    bookList.filter(bookList[i], -1);
-    bookBody.removeChild(shelf);
-})
+//remove.addEventListener('click', () => {
+    //bookList.filter(bookList[i], -1);
+    //bookBody.removeChild(shelf);
+//})
+
+
+const printBooks = function() {
+    for (let i=0; i<bookList.length; i+=1){
+        const shelf = document.createElement('div');
+        shelf.className = 'shelfBox';
+        shelf.innerHTML = 
+        `<div class="book-title-box">
+            <h2 class="book-title">${bookList[i].title}</h2>
+        </div>
+        <div class="author-box">
+            <h2 class="book-author">${bookList[i].author}</h2>
+        </div>
+        <button class="removeBttn">Remove</button>`;
+
+    bookBody.appendChild(shelf);
+    }
+}
+
+printBooks();
