@@ -37,7 +37,7 @@ class BookList {
     this.bookList.push(newObj);
     localStorage.setItem('data', JSON.stringify(this.bookList));
     this.printBooks();
-    this.title.value= '';
+    this.title.value = '';
     this.author.value = '';
   }
 
