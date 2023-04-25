@@ -77,8 +77,7 @@ class BookList {
       shelf.className = 'shelfBox';
       shelf.innerHTML = `<div class="book-title-box">
               <h2 class="book-title">${this.bookList[i].title}</h2>
-          </div>
-          <div class="author-box">
+              <span> by </span>
               <h2 class="book-author">${this.bookList[i].author}</h2>
           </div>
           <button class="removeBttn">Remove</button>`;
