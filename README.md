@@ -100,7 +100,6 @@ Use these commands:
   cd my-folder
   git clone git@github.com:enmanuelbayen/Capstone-Web-page.git
 ```
---->
 
 ### Install
 
@@ -113,7 +112,6 @@ Run command:
   cd my-project
   npm install
 ```
---->
 
 ### Usage
 
