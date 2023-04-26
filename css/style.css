@@ -30,7 +30,7 @@ li {
 
 .navbar {
   justify-content: space-between;
-  padding: .5rem 2%;
+  padding: 0.5rem 2%;
   margin: 1% 1% 0;
   border: 4px solid #1f2328;
 }
@@ -121,14 +121,16 @@ li {
   gap: 1rem;
   border: 4px solid #1f2328;
   margin: 0 1% 1%;
-  padding: .5rem 2%;
+  padding: 0.5rem 2%;
 }
-/* ----Footer */
+
+/* ----contact */
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 #contact h2 {
@@ -136,6 +138,6 @@ li {
   margin-bottom: 2rem;
 }
 
-#contact ul li{
+#contact ul li {
   list-style: inside;
 }
