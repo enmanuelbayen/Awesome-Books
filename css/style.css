@@ -30,6 +30,8 @@ li {
 
 .header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -142,4 +144,9 @@ li {
 
 #contact ul li {
   list-style: inside;
+}
+
+#date {
+  margin: 1%;
+  align-self: flex-end;
 }
