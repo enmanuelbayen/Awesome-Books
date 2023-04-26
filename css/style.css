@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;900&family=Poppins&family=Roboto&display=swap');
 
-a {
-  text-decoration: none;
-}
-
-.flex {
-  display: flex;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -18,12 +10,24 @@ a {
   color: #1f2328;
 }
 
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
 li {
   list-style: none;
 }
 
 .hide {
   display: none;
+}
+
+.content-position {
+  padding: 5vw;
 }
 
 /* -----navbar */
@@ -70,10 +74,9 @@ li {
 
 .bookList {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: 85vh;
+  height: 70vh;
   margin: 1%;
 }
 
@@ -81,6 +84,7 @@ li {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .bookList-container {
@@ -104,6 +108,16 @@ li {
   gap: 0.3rem;
 }
 
+/* ------Add new book */
+
+.addNew-book {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 70vh;
+  margin: 1%;
+}
+
 .bookForm {
   flex-direction: column;
   align-items: center;
@@ -114,16 +128,8 @@ li {
 .bookForm label {
   border: 4px solid #020202;
 }
-
-/* ------Add new book */
-
-.addNew-book {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  height: 85vh;
-  margin: 1%;
+label input {
+  width: 30vw;
 }
 
 /* -----Footer */
@@ -142,6 +148,7 @@ li {
   align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
+  height: 70vh;
 }
 
 #contact ul li {
@@ -151,4 +158,9 @@ li {
 #date {
   margin: 1%;
   align-self: flex-end;
+}
+
+.contact-info {
+  flex-direction: column;
+  gap: 2rem;
 }
