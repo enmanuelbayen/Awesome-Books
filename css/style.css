@@ -112,3 +112,19 @@ li {
 .bookForm label {
   border: 4px solid #020202;
 }
+/* ----Footer */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#contact ul li{
+  list-style: inside;
+}
