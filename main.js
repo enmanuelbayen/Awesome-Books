@@ -60,3 +60,6 @@ class BookList {
 }
 const myBookList = new BookList();
 myBookList.initialize();
+
+const currentDate = new Date().toLocaleString('default', {month:'long', year:'numeric', day:'numeric', hour: 'numeric', minute:'numeric', second:'numeric', hour12:true});
+document.getElementById('date').innerHTML = currentDate;
