@@ -63,3 +63,11 @@ myBookList.initialize();
 
 const currentDate = new Date().toLocaleString('default', {month:'long', year:'numeric', day:'numeric', hour: 'numeric', minute:'numeric', second:'numeric', hour12:true});
 document.getElementById('date').innerHTML = currentDate;
+
+const listNav = document.getElementById('list-page');
+const addNewNav = document.getElementById('add-list');
+const contactNav = document.getElementById('conctact-list');
+
+const booklistSection = document.getElementById('landing-page');
+const addbookSection = document.getElementById('add-book');
+const contactSection = document.getElementById('contact-section');
