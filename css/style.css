@@ -82,6 +82,7 @@ li {
   gap: 2rem;
   height: 70vh;
   margin: 1%;
+  overflow: scroll;
 }
 
 .mainTitle {
